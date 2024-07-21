@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Gowsika V</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#certifiactes">Certificates</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Gowsika V</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li>
+            <a href="#certifiactes" onclick="toggleMenu()">Certificates</a>
+          </li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/photo.jpeg" alt="Gowsika V profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello,I'm</p>
+        <h1 class="title">Gowsika V</h1>
+        <p class="section__text__p2">Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/GowsikaV-one page Resume.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My linkedin profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/gowsika/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My GitHub profile"
+            class="icon"
+            onclick="location.href='https://github.com/Gowsikav/'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- About me  -->
+
+    <section id="about">
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="text-container">
+            <p>
+              Hi I'm Gowsika With a strong foundation in problem-solving and a
+              deep-seated passion for software development, I am eager to
+              channel my skills towards impactful projects within a dynamic work
+              environment. My journey in software development has equipped me
+              with the ability to tackle complex challenges head-on, identifying
+              innovative solutions and implementing them with precision. I
+              thrive on the opportunity to immerse myself in new technologies,
+              constantly seeking to expand my knowledge and skill set to remain
+              at the forefront of industry trends Driven by a relentless
+              curiosity and a commitment to personal and professional growth, I
+              approach each project with enthusiasm and a willingness to learn.
+              I am excited by the prospect of collaborating with like-minded
+              individuals, leveraging our collective expertise to drive
+              meaningful results and contribute to the success of innovative
+              initiatives.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills   -->
+
+    <section id="skills">
+      <h2><strong>Skills</strong></h2>
+      <div class="skills-container">
+        <div class="skill">
+          <i class="fab fa-c"></i>
+          <h3>C</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 60%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <i class="fab fa-java"></i>
+          <h3>Java</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 70%"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <i class="fab fa-sql"></i>
+          <h3>MySQL</h3>
+          <div class="progress-bar">
+            <div class="progress" style="width: 50%"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education  -->
+
+    <section id="education">
+      <h2>Education</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-image">
+            <img
+              src="./assets/mcetlogo.png"
+              alt="Dr.Mahalingam College of Engineering and Technology"
+            />
+          </div>
+          <div class="timeline-content">
+            <h3>Bachelor of Computer Science and Engineering</h3>
+            <span>2021 - 2025</span>
+            <p>Dr. Mahalingam College of Engineering and Technology</p>
+            <br />
+            <p><strong>CGPA: 8.0</strong> (till V semester)</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-image">
+            <img
+              src="./assets/littleimages.jpeg"
+              alt="Little Angels Matriculation Higher Secondary School"
+            />
+          </div>
+          <div class="timeline-content">
+            <h3>Higher Secondary Certificate</h3>
+            <span>2019 - 2021</span>
+            <p>Little Angels Matriculation Higher Secondary School</p>
+            <br />
+            <p><strong>Percentage: 92.95%</strong></p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-image">
+            <img
+              src="./assets/infantimages.jpeg"
+              alt="Infant Jesus Matriculation School"
+            />
+          </div>
+          <div class="timeline-content">
+            <h3>Secondary School Leaving Certificate</h3>
+            <span>2017 - 2019</span>
+            <p>Infant Jesus Matriculation School</p>
+            <br />
+            <p><strong>Percentage: 90.8%</strong></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience-->
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="timeline1">
+        <div class="timeline-item1">
+          <div class="timeline-image1">
+            <img src="./assets/internshiplogo.jpeg" alt="Company 1" />
+          </div>
+          <div class="timeline-content1">
+            <h3>Internship</h3>
+            <h4>Pirai InfoTech Pvt.Ltd</h4>
+            <span>June 2023 (2 weeks)</span>
+            <p>
+              During my internship, I gained valuable insights into the
+              intricacies of software development, learning firsthand about the
+              processes involved in conceptualizing, designing, and implementing
+              software solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Certificates-->
+
+    <section id="certificates">
+      <h2>Certificates</h2>
+      <table class="certificates-table">
+        <tr>
+          <td>
+            <div class="certificate">
+              <img src="./assets/C.jpg" alt="C Programming" />
+              <div class="certificate-details">
+                <h3>Introduction to programming in C</h3>
+                <h4>NPTEL</h4>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="certificate">
+              <img src="./assets/Java(Hackerank).jpg" alt="Java(Basic)" />
+              <div class="certificate-details">
+                <h3>Java(Basic)</h3>
+                <h4>HackeRank</h4>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="certificate">
+              <img src="./assets/mysql.JPG" alt="Database and SQL" />
+              <div class="certificate-details">
+                <h3>Database and SQL</h3>
+                <h4>Infosys Springboard</h4>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="certificate">
+              <img src="./assets/MySQL-DDL.JPG" alt="MYSQL DDL Statements" />
+              <div class="certificate-details">
+                <h3>MySQL Database development:DDL Statements</h3>
+                <h4>Infosys Springboard</h4>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="certificate">
+              <img
+                src="./assets/Internship certificate.jpg"
+                alt="Internship certificate"
+              />
+              <div class="certificate-details">
+                <h3>Internship</h3>
+                <h4>Pirai InfoTech Pvt.Ltd</h4>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="certificate">
+              <img
+                src="./assets/machine.png"
+                alt="Machine learning Algorithms"
+              />
+              <div class="certificate-details">
+                <h3>Machine Learning Algorithms</h3>
+                <h4>Great Learning</h4>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="certificate">
+              <img src="./assets/Python.jpg" alt="Python certificate" />
+              <div class="certificate-details">
+                <h3>The Joy of Computing Using Python</h3>
+                <h4>NPTEL</h4>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="certificate">
+              <img src="./assets/social-networks.JPG" alt="Social Networks" />
+              <div class="certificate-details">
+                <h3>Social Networks</h3>
+                <h4>NPTEL</h4>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="certificate">
+              <img src="./assets/NCC-B.jpg" alt="B certificate" />
+              <div class="certificate-details">
+                <h3>B Certificate</h3>
+                <h4>National Cadet Corps</h4>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="certificate">
+              <img
+                src="./assets/Rama-External.jpeg"
+                alt="External College Event Certificate"
+              />
+              <div class="certificate-details">
+                <h3>Code Debugging Participant Certificate</h3>
+                <h4>Sri Ramakrishna Institute of Technology</h4>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="certificate">
+              <img
+                src="./assets/conference certificate.JPG"
+                alt="conference certificate"
+              />
+              <div class="certificate-details">
+                <h3>Conference Certificate</h3>
+                <h4>leveraging Sentimental Analysis for E-Commerce Insights</h4>
+              </div>
+            </div>
+          </td>
+          <td>
+            <div class="certificate">
+              <img
+                src="./assets/Rama-External.jpeg"
+                alt="External College Event Certificate"
+              />
+              <div class="certificate-details">
+                <h3>Code Debugging Participant Certificate</h3>
+                <h4>Sri Ramakrishna Institute of Technology</h4>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Projects -->
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <div class="project-details">
+          <img src="./assets/project-IoT.jpg" alt="Project Photo 1" />
+          <h3>Color Controlling LEDs using IoT</h3>
+          <p>
+            Developed a temperature-based LED color control system integrated
+            with a Blynk application. The system uses a temperature sensor to
+            measure temperature and adjusts LED colors accordingly: blue for
+            30-35°C and red for temperatures above 36°C. A motion detection
+            feature triggers a white LED upon detecting movement. The Blynk app
+            allows users to customize LED colors, enhancing energy efficiency
+            and user control.
+          </p>
+          <button class="play-video-btn" onclick="playVideo('project-video1')">
+            Play Video
+          </button>
+        </div>
+        <video id="project-video1" controls>
+          <source src="./assets/IoT-project.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="project">
+        <div class="project-details">
+          <img src="./assets/social-media.jpg" alt="Project Photo 2" />
+          <h3>
+            Social Media Sentimental Analysis for Understanding Customer
+            Opinions
+          </h3>
+          <p>
+            Created an advanced sentiment analysis system for the e-commerce
+            domain to enhance purchasing decisions and product development
+            strategies. The system integrates web scraping techniques with
+            state-of-the-art sentiment analysis algorithms to extract and
+            analyze customer sentiment from Flipkart reviews in real-time. It
+            features user-friendly interfaces and interactive visualizations,
+            providing comprehensive and timely feedback to consumers and
+            sellers. This solution significantly improves the accuracy and
+            efficiency of sentiment analysis, offering valuable insights from
+            customer feedback.
+          </p>
+          <button class="play-video-btn" onclick="playVideo('project-video2')">
+            Play Video
+          </button>
+        </div>
+        <video id="project-video2" controls>
+          <source src="./assets/social-media.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+
+    <!-- Contack details-->
+
+    <section id="contact">
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:gowsikavenkatachslam0713@gmail.com"
+              >gowsikavenkatachslam0713@gmail.com</a
+            >
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/gowsika/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#education" onclick="toggleMenu()">Education</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+            <li>
+              <a href="#certifiactes" onclick="toggleMenu()">Certificates</a>
+            </li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Gowsika. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
