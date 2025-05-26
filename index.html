@@ -1,288 +1,463 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="webpage icon" href="images/logo.jpg" type="icon" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="header">
-      <img src="images/logo.jpg" alt="Portfolio icon" />
-      <div class="menu">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#certificates">Certificates</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-    <br />
 
-    <!-- intro -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <link rel="webpage icon" href="images/logo.jpg" type="icon" />
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 
-    <div class="profile">
-      <img id="photo" src="images/photo.jpeg" alt="Profile photo" />
-      <div class="name">
-        <span>Hello,I'm</span>
-        <br />
-        <h1>GOWSIKA V</h1>
-        <h3>Computer Science Engineer</h3>
-        <div class="social">
-          <a href="https://www.linkedin.com/in/gowsika/" target="_blank"
-            ><img src="images/linkedin.png" alt="My linkedin profile"
-          /></a>
-          <a href="https://github.com/Gowsikav/" target="_blank">
-            <img src="images/github.png" alt="My GitHub profile"
-          /></a>
-        </div>
-      </div>
-    </div>
-    <br /><br />
+</head>
 
-    <!-- About -->
-
-    <div id="about" class="about">
-      <h1>About Me</h1>
-      <br /><br /><br /><br />
-      <p>
-        Hi I'm <i>Gowsika</i> With a strong foundation in problem-solving and a
-        deep-seated passion for software development, I am eager to channel my
-        skills towards impactful projects within a dynamic work environment. My
-        journey in software development has equipped me with the ability to
-        tackle complex challenges head-on, identifying innovative solutions and
-        implementing them with precision. I thrive on the opportunity to immerse
-        myself in new technologies, constantly seeking to expand my knowledge
-        and skill set to remain at the forefront of industry trends Driven by a
-        relentless curiosity and a commitment to personal and professional
-        growth, I approach each project with enthusiasm and a willingness to
-        learn. I am excited by the prospect of collaborating with like-minded
-        individuals, leveraging our collective expertise to drive meaningful
-        results and contribute to the success of innovative initiatives.
-      </p>
-    </div>
-    <br /><br />
-
-    <!-- skills -->
-
-    <div id="skills" class="skills">
-      <h1>Skills</h1>
-      <br />
-      <div class="skillset">
-        <div class="skill">
-          <h2>Programming Language</h2>
-          <br />
-          <ul>
-            <li>C</li>
-            <li>Java</li>
+<body>
+  <header class="fixed-top">
+    <nav class="navbar navbar-expand-lg" style="background-image: linear-gradient(to bottom right, #8ec5fc, #e0c3fc);">
+      <div class="container-fluid">
+        <img class="navbar-brand" src="images/logo.jpg" alt="Portfolio icon" height="100">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto fs-4 fw-bold">
+            <li class="nav-item"><a class="nav-link" aria-current="page" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#certificate">Certificates</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
           </ul>
         </div>
-        <div class="skill">
-          <h2>Web Development</h2>
-          <br />
-          <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>Javascript</li>
-    
+      </div>
+    </nav>
+  </header>
+
+  <!-- intro -->
+
+  <section class="home container-fluid d-flex justify-content-center align-items-center">
+    <div class="card mb-3 border-0">
+      <div class="row g-0 d-flex justify-content-center align-items-center">
+        <div class="col-md-4">
+          <img src="images/photo.jpeg" class="img-fluid rounded" style="width: 800px; height: 300px"
+            alt="Profile photo">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body fs-4">
+            <p class="card-text">Hello, I'm</p>
+            <h5 class="card-title fs-2 fw-bolder">GOWSIKA V</h5>
+            <p class="card-text">Software Developer</p>
+            <div class="d-flex gap-2">
+              <a href="https://www.linkedin.com/in/gowsika/" target="_blank">
+                <img src="images/linkedin.png" alt="LinkedIn" width="20">
+              </a>
+              <a href="https://github.com/Gowsikav/" target="_blank">
+                <img src="images/github.png" alt="GitHub" width="20">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+
+  <div id="about" class="container py-5 px-3">
+    <div class="card border-0">
+      <div class="card-header1 text-center">
+        <h2 class="fw-bold display-5">About Me</h2>
+      </div>
+      <div class="card-body">
+        <p class="fs-5 text-start text-md-justify">
+          Hi, I'm <i>Gowsika</i>. With a strong foundation in problem-solving and a deep-seated passion for software
+          development, I am eager to channel my skills towards impactful projects within a dynamic work environment. My
+          journey in software development has equipped me with the ability to tackle complex challenges head-on,
+          identifying innovative solutions and implementing them with precision. I thrive on the opportunity to immerse
+          myself in new technologies, constantly seeking to expand my knowledge and skill set to remain at the forefront
+          of industry trends. Driven by a relentless curiosity and a commitment to personal and professional growth, I
+          approach each project with enthusiasm and a willingness to learn. I am excited by the prospect of
+          collaborating with like-minded individuals, leveraging our collective expertise to drive meaningful results
+          and contribute
+          to the success of innovative initiatives.
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- skills -->
+
+  <div id="skills" class="container py-5 px-3">
+    <h1 class="text-center mb-5 fw-bold display-5">Skills</h1>
+
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-header fw-bold fs-5">FrontEnd Technologies</div>
+          <ul class="list-group list-group-flush no-border-list">
+            <li class="list-group-item">HTML</li>
+            <li class="list-group-item">CSS</li>
+            <li class="list-group-item">JavaScript</li>
+            <li class="list-group-item">Bootstrap</li>
           </ul>
         </div>
-        <div class="skill">
-          <h2>Frameworks</h2>
-          <br />
-          <ul>
-            <li>ReactJs</li>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-header fw-bold fs-5">BackEnd Technologies</div>
+          <ul class="list-group list-group-flush no-border-list">
+            <li class="list-group-item">Core Java</li>
+            <li class="list-group-item">Servlets</li>
+            <li class="list-group-item">JSP</li>
           </ul>
         </div>
-        <div class="skill">
-          <h2>DataBase</h2>
-          <br />
-          <ul>
-            <li>MySQL</li>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-header fw-bold fs-5">Database Technologies</div>
+          <ul class="list-group list-group-flush no-border-list">
+            <li class="list-group-item">SQL</li>
+            <li class="list-group-item">MySQL</li>
           </ul>
         </div>
-        <br /><br />
       </div>
-      <br /><br />
-    </div>
 
-    <!-- Education -->
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-header fw-bold fs-5">Development Tools</div>
+          <ul class="list-group list-group-flush no-border-list">
+            <li class="list-group-item">VS Code</li>
+            <li class="list-group-item">IntelliJ IDEA</li>
+          </ul>
+        </div>
+      </div>
 
-    <div id="education" class="education">
-      <h1>Education</h1>
-      <br />
-      <div class="education-details">
-        <div class="details">
-          <img src="images/mcetlogo.png" alt="college logo" />
-          <div class="school-details">
-            <h3>Dr.Mahalingam College of Engineering and Technology</h3>
-            <p>Pollachi</p>
-            <p><b>8.18 CGPA</b> till VII semester (2021 - present)</p>
-          </div>
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-header fw-bold fs-5">Architecture</div>
+          <ul class="list-group list-group-flush no-border-list">
+            <li class="list-group-item">MVC (Model View Controller)</li>
+          </ul>
         </div>
-        <div class="details">
-          <img src="images/littleimages.jpeg" alt="12th school logo" />
-          <div class="school-details">
-            <h3>Little Angels Matric Higher Secondary School</h3>
-            <p>Namakkal</p>
-            <p><b>92.95 %</b> (2020 - 2021)</p>
-          </div>
-        </div>
-        <div class="details">
-          <img src="images/infantimages.jpeg" alt="10th school logo" />
-          <div class="school-details">
-            <h3>Infant Jesus Matriculation School</h3>
-            <p>Kattuputhur</p>
-            <p><b>90.8 %</b> (2018 - 2019)</p>
-          </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-header fw-bold fs-5">Version Control</div>
+          <ul class="list-group list-group-flush no-border-list">
+            <li class="list-group-item">Git</li>
+          </ul>
         </div>
       </div>
     </div>
-    <br /><br /><br />
+  </div>
 
-    <!-- Experience -->
+  <!-- Education -->
 
-    <div id="experience" class="experience">
-      <h1>Experience</h1>
-      <div class="experience-details">
-        <div class="details">
-          <img src="images/internshiplogo.jpeg" alt="PiraiInfoTech Logo" />
-          <div class="intern-details">
-            <h3>Pirai InfoTech Private Limited</h3>
-            <p>Internship (2 Weeks in may 2023)</p>
-            <span>
-              Basic knowledge about FrontEnd, UI/UX design, development,
-              Testing, deployment and maintenance.
-            </span>
-          </div>
+  <div id="education" class="container py-5">
+    <h1 class="text-center mb-5 fw-bolder">Education</h1>
+
+    <div class="row gy-4 w-75 mx-auto">
+      <!-- College -->
+      <div class="edu-card col-12 d-flex align-items-center">
+        <img src="images/mcetlogo.png" alt="College logo" class="me-4" style="width: 80px; height: 80px;">
+        <div>
+          <h4 class="mb-1">Dr. Mahalingam College of Engineering and Technology</h4>
+          <p class="mb-1">Pollachi</p>
+          <p><strong>8.18 CGPA</strong> till VII semester (2021 - 2025)</p>
+        </div>
+      </div>
+
+      <div class="edu-card col-12 d-flex align-items-center">
+        <img src="images/littleimages.jpeg" alt="12th School logo" class="me-4" style="width: 80px; height: 80px;">
+        <div>
+          <h4 class="mb-1">Little Angels Matric Higher Secondary School</h4>
+          <p class="mb-1">Namakkal</p>
+          <p><strong>92.95%</strong> (2020 - 2021)</p>
+        </div>
+      </div>
+
+      <div class="edu-card col-12 d-flex align-items-center">
+        <img src="images/infantimages.jpeg" alt="10th School logo" class="me-4" style="width: 80px; height: 80px;">
+        <div>
+          <h4 class="mb-1">Infant Jesus Matriculation School</h4>
+          <p class="mb-1">Kattuputhur</p>
+          <p><strong>90.8%</strong> (2018 - 2019)</p>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- certificates -->
 
-    <div id="certificates" class="certificates">
-      <h1>Certificates</h1>
-      <div class="certificate">
-        <div class="detail">
-          <img src="images/Myntra participation.JPG" alt="Myntra " />
-          <div class="content">
-            <h3>Hacker-Ramp WeforShe </h3>
-            <span>Unstop Myntra participation</span>
-          </div>
+  <!-- Experience -->
+
+  <div id="experience" class="container py-5">
+    <h1 class="text-center mb-5 fw-bolder">Experience</h1>
+
+    <div class="row gy-4 w-75 mx-auto">
+
+      <div class="edu-card col-12 d-flex align-items-center flex-wrap">
+        <img src="images/x-workz.jpeg" alt="x-workz logo" class="me-4 mb-3 mb-md-0" style="width: 80px; height: 80px;">
+        <div>
+          <h4 class="mb-1">X-workz ODC</h4>
+          <p class="mb-1">Bangalore</p>
+          <p class="mb-1">(Software Intern) 4 months</p>
+          <p>Learning Java, SQL, Web Technologies</p>
         </div>
-        <div class="detail">
-          <img src="images/Flipkart grid 6.0 participation.JPG" alt="Flipkart" />
-          <div class="content">
-            <h3>Flipkart GRiD 6.0 </h3>
-            <span>Unstop Flipkart participation</span>
-          </div>
-        </div>
-        <div class="detail">
-          <img src="images/Tata Crucible Participation.jpg" alt="Tata Crucible" />
-          <div class="content">
-            <h3>TATA Crucible Campus Quiz 2024</h3>
-            <span>Unstop Tata Groups</span>
-          </div>
-        </div>
-        <div class="detail">
-          <img src="images/SQL(Basic).JPG" alt="sql(basic)" />
-          <div class="content">
-            <h3>SQL(Basic)</h3>
-            <span>HackerRank</span>
-          </div>
-        </div>
-        <div class="detail">
-          <img src="images/Java(Hackerank).jpg" alt="java" />
-          <div class="content">
-            <h3>Java</h3>
-            <span>HackerRank</span>
-          </div>
-        </div>
-        <div class="detail">
-          <img src="images/Internship certificate.jpg" alt="internship" />
-          <div class="content">
-            <h3>Internship</h3>
-            <span>Pirai InfoTech Private Limited</span>
-          </div>
-        </div>
-        <div class="detail">
-          <img src="images/mysql.JPG" alt="MySQL" />
-          <div class="content">
-            <h3>DataBase and SQL</h3>
-            <span>Infosys SpringBoard</span>
-          </div>
-        </div>
-        <div class="detail">
-          <img src="images/MySQL-DDL.JPG" alt="MySQL-DDL" />
-          <div class="content">
-            <h3>MySQL Database Development: DDL Statements</h3>
-            <span>Infosys SpringBoard</span>
-          </div>
-        </div>
-        <div class="detail">
-          <img src="images/C.jpg" alt="C" />
-          <div class="content">
-            <h3>Introduction to C Programming</h3>
-            <span>NPTEL</span>
-          </div>
-        </div>
-        <div class="detail">
-          <img src="images/Python.jpg" alt="Python" />
-          <div class="content">
-            <h3>The Joy of Computing Using Python</h3>
-            <span>NPTEL</span>
-          </div>
-        </div>
-        <div class="detail">
-          <img src="images/social-networks.JPG" alt="social Networks" />
-          <div class="content">
-            <h3>Social Networks</h3>
-            <span>NPTEL</span>
-          </div>
-        </div>
-        <div class="detail">
-          <img src="images/conference certificate.JPG" alt="Conference" />
-          <div class="content">
-            <h3>Leveraging Sentimental Analysis for E-commerce Insights</h3>
-            <span>
-              International conference on Innovative in Intelligence and
-              Informatics ICI<sub>3</sub>'2K24
-            </span>
-          </div>
-        </div>
-        <div class="detail">
-          <img src="images/NCC-B.jpg" alt="NCC- B" />
-          <div class="content">
-            <h3>"B" Certificate</h3>
-            <span>National Cadet Corps</span>
-          </div>
-        </div>
-        <div class="detail">
-          <img src="images/C - Certificate .jpg" alt="NCC- C" />
-          <div class="content">
-            <h3>"C" Certificate</h3>
-            <span>National Cadet Corps</span>
-          </div>
-        </div>
-        <div class="detail">
-          <img
-            src="images/Rama-External.jpeg"
-            alt="External event participation"
-          />
-          <div class="content">
-            <h3>
-              Event participation (Code Debugging, Google Hunt, Tech Connection)
-            </h3>
-            <span>SRIT(Xplosion 2K23)</span>
-          </div>
+      </div>
+
+      <div class="edu-card col-12 d-flex align-items-center flex-wrap">
+        <img src="images/internshiplogo.jpeg" alt="PiraiInfoTech logo" class="me-4 mb-3 mb-md-0"
+          style="width: 80px; height: 80px;">
+        <div>
+          <h4 class="mb-1">Pirai InfoTech Private Limited</h4>
+          <p class="mb-1">Pollachi</p>
+          <p class="mb-1">(Software Developer Intern) 2 weeks</p>
+          <p>Basic knowledge about Software Developer</p>
         </div>
       </div>
     </div>
-  </body>
+  </div>
+
+
+  <!-- certificates -->
+
+  <div id="certificate" class="container py-5">
+    <h1 class="text-center mb-5 fw-bolder">Certificates</h1>
+    <div id="course-complete">
+      <h2 class="mb-4">Course Completion Certificate</h2>
+
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="images/Java (scaler topics).jpg" class="card-img-top" alt="Java (Scaler topics)">
+            <div class="card-body">
+              <p class="card-text">Java Course - Mastering the Fundamentals</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="images/mysql.JPG" class="card-img-top" alt="SQL">
+            <div class="card-body">
+              <p class="card-text">Database and SQL</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="images/MySQL-DDL.JPG" class="card-img-top" alt="SQL DDL">
+            <div class="card-body">
+              <p class="card-text">MySQL Database Development: DDL Statements</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="images/SQL(Basic).JPG" class="card-img-top" alt="SQL Hackerank">
+            <div class="card-body">
+              <p class="card-text">SQL (Basic) in HackerRank</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="images/Java(Hackerank).jpg" class="card-img-top" alt="Java Hackerank">
+            <div class="card-body">
+              <p class="card-text">Java in HackerRank</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="images/social-networks.JPG" class="card-img-top" alt="Social Networks">
+            <div class="card-body">
+              <p class="card-text">Social Networks in NPTEL</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="images/Python.jpg" class="card-img-top" alt="Python">
+            <div class="card-body">
+              <p class="card-text">The Joy of Computing Using Python</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="images/C.jpg" class="card-img-top" alt="C Programming">
+            <div class="card-body">
+              <p class="card-text">Introduction to Programming in C</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="conference-certificate">
+      <h2 class="mb-4">Conference Certificate</h2>
+
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="images/conference VI.JPG" class="card-img-top" alt="6th semester certificate">
+            <div class="card-body">
+              <p class="card-text">Leveraging Sentimental Analysis for E-commerce Insights</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="images/conference VIII.png" class="card-img-top" alt="8th semester certificate">
+            <div class="card-body">
+              <p class="card-text">Aspect-Based Sentiment Analysis</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="NCC-certificate">
+      <h2 class="mb-4">NCC Certificate</h2>
+
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="images/B - Certificate .jpg" class="card-img-top" alt="B certificate">
+            <div class="card-body">
+              <p class="card-text">B Certificate with "A" Grade</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="images/C - Certificate .jpg" class="card-img-top" alt="C certificate">
+            <div class="card-body">
+              <p class="card-text">C Certificate with "A" Grade</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="sport-certificate">
+      <h2 class="mb-4">Sports Certificate</h2>
+
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="images/Throwball.jpg" class="card-img-top" alt="Throwball">
+            <div class="card-body">
+              <p class="card-text">ThrowBall (Winner)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="images/Kho-Kho.jpg" class="card-img-top" alt="Kho-Kho">
+            <div class="card-body">
+              <p class="card-text">Kho-Kho (Winner)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="images/HandBall.jpg" class="card-img-top" alt="Hand Ball">
+            <div class="card-body">
+              <p class="card-text">HandBall (Runner)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="images/BasketBall.jpg" class="card-img-top" alt="BasketBall">
+            <div class="card-body">
+              <p class="card-text">BasketBall (Runner)</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="images/MCET-Trophy ThrowBall.jpg" class="card-img-top" alt="Mcet trophy throwball">
+            <div class="card-body">
+              <p class="card-text">MCET Trophy 2023 (Runner)</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="event-certificate">
+      <h2 class="mb-4">Event Certificate</h2>
+
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="images/Rama-External.jpeg" class="card-img-top" alt="Event ">
+            <div class="card-body">
+              <p class="card-text">Event participation (Code Debugging, Google Hunt, Tech Connection)</p>
+              <span>SRIT(Xplosion 2K23)</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="internship-certificate">
+      <h2 class="mb-4">Internship Certificate</h2>
+
+      <div class="row g-4 justify-content-center">
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100">
+            <img src="images/Internship certificate.jpg" class="card-img-top" alt="Internship pirai infotech ">
+            <div class="card-body">
+              <p class="card-text">Pirai Infotech Private Limited</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
 
   <!-- projects -->
 
@@ -293,8 +468,16 @@
         <img src="images/to-do.png" alt="Todo List">
         <div class="details">
           <h3>Todo List</h3>
-           <p>I developed a to-do list application using React.js to help users efficiently manage their tasks. The app allows users to add, edit, and delete tasks, providing a simple and intuitive interface. Users can also mark tasks as completed, which visually separates finished tasks from pending ones. Additionally, the app includes a task filtering feature, enabling users to easily view tasks based on their completion status. With a fully responsive design, the application ensures an optimal user experience across both desktop and mobile devices. This project highlights my expertise in React.js, state management, and responsive design.</p>        
-             <a href="https://github.com/Gowsikav/TodoList" target="_blank" class="portfolio-link">View Project Code</a>&nbsp;&nbsp;
+          <p>I developed a to-do list application using React.js to help users efficiently manage their tasks. The app
+            allows users to add, edit, and delete tasks, providing a simple and intuitive interface. Users can also mark
+            tasks as completed, which visually separates finished tasks from pending ones. Additionally, the app
+            includes
+            a task filtering feature, enabling users to easily view tasks based on their completion status. With a fully
+            responsive design, the application ensures an optimal user experience across both desktop and mobile
+            devices.
+            This project highlights my expertise in React.js, state management, and responsive design.</p>
+          <a href="https://github.com/Gowsikav/TodoList" target="_blank" class="portfolio-link">View Project
+            Code</a>&nbsp;&nbsp;
           <a href="https://gowsikav.github.io/TodoList/" target="_blank" class="portfolio-link">View Project</a>
         </div>
       </div>
@@ -302,34 +485,50 @@
         <img src="images/Stone-paper-game.png" alt="Stone paper scissor logo">
         <div class="details">
           <h3>Stone Paper Scissor Game</h3>
-          <p>The Stone Paper Scissors Game is a classic implementation of the popular hand game, reimagined as a simple yet engaging web application. Designed with both functionality and user experience in mind, this project demonstrates my ability to create interactive and dynamic web applications using HTML5, CSS3, and JavaScript. </p>
-          <a href="https://github.com/Gowsikav/Stone_Paper_Scissor-Game" target="_blank" class="portfolio-link">View Project Code</a>&nbsp;&nbsp;
-          <a href="https://gowsikav.github.io/Stone_Paper_Scissor-Game/" target="_blank" class="portfolio-link">View Project</a>
+          <p>The Stone Paper Scissors Game is a classic implementation of the popular hand game, reimagined as a simple
+            yet engaging web application. Designed with both functionality and user experience in mind, this project
+            demonstrates my ability to create interactive and dynamic web applications using HTML5, CSS3, and
+            JavaScript.
+          </p>
+          <a href="https://github.com/Gowsikav/Stone_Paper_Scissor-Game" target="_blank" class="portfolio-link">View
+            Project Code</a>&nbsp;&nbsp;
+          <a href="https://gowsikav.github.io/Stone_Paper_Scissor-Game/" target="_blank" class="portfolio-link">View
+            Project</a>
         </div>
       </div>
       <div class="project-details">
         <img src="images/guess-game.png" alt="Guess the Number logo">
         <div class="details">
           <h3>Guess the Number Game</h3>
-          <p>A simple yet addictive web-based game where players guess a random number within a set number of attempts. Designed for all ages, the game offers instant feedback to guide players closer to the correct answer. Implemented using HTML5, CSS3,JavaScript </p>
-          <a href="https://github.com/Gowsikav/Guess-the-number-game" target="_blank" class="portfolio-link">View Project Code</a>&nbsp;&nbsp;
-          <a href="https://gowsikav.github.io/Guess-the-number-game/" target="_blank" class="portfolio-link">View Project</a>
+          <p>A simple yet addictive web-based game where players guess a random number within a set number of attempts.
+            Designed for all ages, the game offers instant feedback to guide players closer to the correct answer.
+            Implemented using HTML5, CSS3,JavaScript </p>
+          <a href="https://github.com/Gowsikav/Guess-the-number-game" target="_blank" class="portfolio-link">View
+            Project
+            Code</a>&nbsp;&nbsp;
+          <a href="https://gowsikav.github.io/Guess-the-number-game/" target="_blank" class="portfolio-link">View
+            Project</a>
         </div>
       </div>
       <div class="project-details">
         <img src="images/youtube-logo.jpg" alt="youtube logo">
         <div class="details">
           <h3>YouTube Contact Us Page Clone</h3>
-          <p>As part of my web development practice, I cloned the YouTube "Contact Us" page, replicating the design and functionality using HTML, CSS.</p>
-          <a href="https://github.com/Gowsikav/YouTube-Contact-Us-Page" target="_blank" class="portfolio-link">View Project Code</a>&nbsp;&nbsp;
-          <a href=" https://gowsikav.github.io/YouTube-Contact-Us-Page/" target="_blank" class="portfolio-link">View Project</a>
+          <p>As part of my web development practice, I cloned the YouTube "Contact Us" page, replicating the design and
+            functionality using HTML, CSS.</p>
+          <a href="https://github.com/Gowsikav/YouTube-Contact-Us-Page" target="_blank" class="portfolio-link">View
+            Project Code</a>&nbsp;&nbsp;
+          <a href=" https://gowsikav.github.io/YouTube-Contact-Us-Page/" target="_blank" class="portfolio-link">View
+            Project</a>
         </div>
       </div>
       <div class="project-details">
         <img src="images/foody-logo.JPG" alt="foody logo">
         <div class="details">
           <h3>Foody Website</h3>
-          <p>The Foody website is a static yet visually engaging food delivery platform, built entirely using HTML and CSS. The site is designed to showcase a variety of food items with an emphasis on clean design, simplicity, and user-friendly navigation. </p>
+          <p>The Foody website is a static yet visually engaging food delivery platform, built entirely using HTML and
+            CSS. The site is designed to showcase a variety of food items with an emphasis on clean design, simplicity,
+            and user-friendly navigation. </p>
           <a href="https://gowsikav.github.io/Foody/" target="_blank" class="portfolio-link">View Project</a>
         </div>
       </div>
@@ -337,7 +536,8 @@
         <img src="images/universe-logo.JPG" alt="universal picture logo">
         <div class="details">
           <h3>Universal Picture Website Clone</h3>
-          <p>Built entirely with HTML and CSS, this project is a precise clone of the Universal Pictures website, accurately replicating its design and layout. </p>
+          <p>Built entirely with HTML and CSS, this project is a precise clone of the Universal Pictures website,
+            accurately replicating its design and layout. </p>
           <!-- <a href="https://gowsikav.github.io/Foody/" target="_blank" class="portfolio-link">View Project</a> -->
         </div>
       </div>
@@ -346,20 +546,27 @@
         <div class="details">
           <h3>Social Media Sentimental Analysis for Understanding Customer
             Opinions</h3>
-          <p>Developed an advanced sentiment analysis system for e-commerce, integrating web scraping and advanced algorithms to analyze Flipkart reviews in real-time. This system provides actionable insights through user-friendly interfaces and interactive visualizations, enhancing purchasing decisions and product development. </p>
-           <a href="https://github.com/Gowsikav/Social-Media-Sentimental-Analysis-for-Understanding-Customer-Opinions" target="_blank" class="portfolio-link">View Project Code</a>&nbsp;&nbsp;
-           <a href="images/social-media.mp4" target="_blank" class="portfolio-link">View Project Video</a>
+          <p>Developed an advanced sentiment analysis system for e-commerce, integrating web scraping and advanced
+            algorithms to analyze Flipkart reviews in real-time. This system provides actionable insights through
+            user-friendly interfaces and interactive visualizations, enhancing purchasing decisions and product
+            development. </p>
+          <a href="https://github.com/Gowsikav/Social-Media-Sentimental-Analysis-for-Understanding-Customer-Opinions"
+            target="_blank" class="portfolio-link">View Project Code</a>&nbsp;&nbsp;
+          <a href="images/social-media.mp4" target="_blank" class="portfolio-link">View Project Video</a>
         </div>
       </div>
       <div class="project-details">
         <img src="images/project-IoT.jpg" alt="LED project">
         <div class="details">
           <h3>Color Controlling LEDs using IoT</h3>
-          <p>Developed a temperature-based LED color control system integrated with the Blynk app. The system adjusts LED colors based on temperature—blue for 30-35°C and red for above 36°C—and activates a white LED with motion detection. The Blynk app allows users to customize LED colors, improving energy efficiency and control.</p>
-           <a href="images/IoT-project.mp4" target="_blank" class="portfolio-link">View Project Video</a>
+          <p>Developed a temperature-based LED color control system integrated with the Blynk app. The system adjusts
+            LED
+            colors based on temperature—blue for 30-35°C and red for above 36°C—and activates a white LED with motion
+            detection. The Blynk app allows users to customize LED colors, improving energy efficiency and control.</p>
+          <a href="images/IoT-project.mp4" target="_blank" class="portfolio-link">View Project Video</a>
         </div>
       </div>
-      
+
     </div>
   </div>
   <br><br><br>
@@ -369,7 +576,7 @@
   <div id="contact" class="contact">
     <h1>Contact</h1>
     <div class="content">
-      <img id="contact-img" src="images/contact.jpeg" alt="contact image" >
+      <img id="contact-img" src="images/contact.jpeg" alt="contact image">
       <div class="form">
         <!--label for="name">Your Name</label>
         <input id="name" type="text"><br>
@@ -380,30 +587,18 @@
         <button type="submit">Submit</button> -->
         <div class="contact-info-upper-container">
           <div class="contact-info-container">
-            <img
-              src="images/email.png"
-              alt="Email icon"
-              class="icon contact-icon email-icon"
-            />
+            <img src="images/email.png" alt="Email icon" class="icon contact-icon email-icon" />
             <p>
-              <a href="mailto:gowsikavenkatachslam0713@gmail.com"
-                >gowsikavenkatachslam0713@gmail.com</a
-              >
+              <a href="mailto:gowsikavenkatachslam0713@gmail.com">gowsikavenkatachslam0713@gmail.com</a>
             </p>
           </div>
           <div class="contact-info-container">
-            <img
-              src="images/linkedin.png"
-              alt="LinkedIn icon"
-              class="icon contact-icon"
-            />
+            <img src="images/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
             <p><a href="https://www.linkedin.com/in/gowsika/">LinkedIn</a></p>
           </div>
           <div class="contact-phone-number">
-            <img src="images/phonenumber.png"
-             alt="Phonenumber icon"
-             class="icon-phonenumber"/>
-             <p>+91 9342255407</p>
+            <img src="images/phonenumber.png" alt="Phonenumber icon" class="icon-phonenumber" />
+            <p>+91 9342255407</p>
           </div>
         </div>
       </div>
@@ -412,8 +607,16 @@
 
   <!-- footer -->
 
-  <div class="footer" >
+  <div class="footer">
     <p>Copyright &#169; 2024 Gowsika. All Rights Reserved.</p>
   </div>
-  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.min.js"
+    integrity="sha384-RuyvpeZCxMJCqVUGFI0Do1mQrods/hhxYlcVfGPOfQtPJh0JCw12tUAZ/Mv10S7D"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
